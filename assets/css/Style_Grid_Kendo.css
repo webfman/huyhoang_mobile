@@ -1,0 +1,99 @@
+.btn
+{
+    font-size: 12px;
+}
+.header_css
+{    
+    font-size: 12px;
+    text-align: center !important;
+    font-weight: bold !important;
+    color : #2e6e9e !important;
+    /*text-decoration: underline;*/
+         
+}
+.row_css
+{
+    font-size: 12px;
+    text-align: center !important;
+    white-space: normal !important;
+}
+.k-grid-header .k-header
+{
+    white-space: normal !important;
+    text-align: center !important;    
+}
+
+.k-grid-header th.k-header {
+  vertical-align: inherit;
+}
+
+.Title_Button
+{
+    color : red;    
+    font-size: 14px;
+    text-align: center !important;
+    font-weight: bold;
+    
+}
+.Toolbar_right
+{
+    float: right !important;
+    margin-right: .8em;
+    font-size: 14px;
+}
+.Toolbar_left
+{
+    float: left;
+    margin-right: .8em;
+    font-size: 14px;
+}
+.myTitleWindow .k-window-titlebar,
+.myTitleWindow .k-window-actions
+{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;    
+}
+
+.k-window-titlebar {
+    min-height: 30px !important;
+}
+.k-content {
+    background:white !important;
+}
+
+.k-tabstrip
+{
+    font-size: 14px;    
+}
+.TieuDe
+{
+    font-weight: bold;
+    font-size: 1.2em;
+    border-bottom: 1px solid #dbdee0;   
+    padding-bottom:10px; 
+
+}
+.button_khoa
+{
+    background-image: url(../img/Lock-Lock-icon.png); /* 16px x 16px */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer; /* make the cursor like hovering over an <a> element */
+    height: 32px;
+    padding-left: 32px; /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+.button_mokhoa
+{
+    background-image: url(../img/Lock-Unlock-icon.png); /* 16px x 16px */
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer; /* make the cursor like hovering over an <a> element */
+    height: 32px;
+    padding-left: 32px; /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+

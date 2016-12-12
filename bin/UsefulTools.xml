@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UsefulTools</name>
+    </assembly>
+    <members>
+        <member name="T:UsefulTools.Authentication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UsefulTools.Authentication.GetMD5(System.String)">
+            <summary>
+            Get MD5 hash (32 char) of an input string
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UsefulTools.Authentication.GetSHA256(System.String)">
+            <summary>
+            Get SHA256 hash (64 char) of an input string
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:UsefulTools.DateTools">
+            <summary>
+            Date relation tools.
+            </summary>
+        </member>
+        <member name="M:UsefulTools.DateTools.ToAccessFormat(System.DateTime)">
+            <summary>
+            Convert given date to MS Access format - #mm/dd/yyyy#
+            </summary>
+            <param name="Input">ngày cần chuyển đổi</param>
+            <returns>chuỗi ngày tháng dưới dạng (#mm/dd/yyyy#)</returns>
+        </member>
+        <member name="M:UsefulTools.DateTools.ToOracleFormat(System.DateTime)">
+            <summary>
+            Convert given date to Oracle format - to_date(date, 'dd/mm/yyyy')
+            </summary>
+            <param name="Date">ngày cần chuyển đổi</param>
+            <returns>to_date(date, 'dd/mm/yyyy')</returns>
+        </member>
+        <member name="M:UsefulTools.DateTools.ToSQLServerFormat(System.DateTime)">
+            <summary>
+            Convert given date to SQL Server format - 'yyyy-mm-dd'
+            </summary>
+            <param name="Date">ngày cần chuyển đổi</param>
+            <returns>chuỗi ngày tháng dưới dạng ('yyyy-mm-dd')</returns>
+        </member>
+        <member name="M:UsefulTools.DateTools.ToVietnameseFormat(System.DateTime)">
+            <summary>
+            Convert given date to Vietnamese format - dd/mm/yyyy
+            </summary>
+            <param name="Date">ngày cần chuyển đổi</param>
+            <returns>chuỗi ngày tháng dưới dạng (dd/mm/yyyy)</returns>
+        </member>
+        <member name="M:UsefulTools.DateTools.FromVietnameseFormat(System.String)">
+            <summary>
+            Convert Vietnamese date to DateTime object
+            </summary>
+            <param name="Date">ngày cần chuyển đổi, có định dạng: (dd/mm/yyyy)</param>
+            <returns>DateTime object</returns>
+            <exception cref="T:System.FormatException">Tham số đầu vào không đúng định dạng</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">Ngày không hợp lệ</exception>
+        </member>
+        <member name="M:UsefulTools.DateTools.ToVietnameseLongDate(System.DateTime)">
+            <summary>
+            Convert given date to Vietnamese long format
+            </summary>
+            <param name="Date">ngày cần chuyển đổi</param>
+            <returns>chuỗi ngày tháng dưới dạng (thứ ... ngày ... tháng ... năm ...)</returns>
+        </member>
+        <member name="T:UsefulTools.DateTimeTools">
+            <summary>
+            Date time relation tools.
+            </summary>
+        </member>
+        <member name="M:UsefulTools.DateTimeTools.ToSQLServerFormat(System.DateTime)">
+            <summary>
+            Convert given date time to SQL Server format
+            </summary>
+            <param name="Input">ngày cần chuyển đổi</param>
+            <returns>chuỗi giờ ngày tháng dưới dạng ('yyyy-mm-dd hh:mm:ss')</returns>
+        </member>
+        <member name="M:UsefulTools.DateTimeTools.ToVietnameseFormat(System.DateTime)">
+            <summary>
+            Convert given date to Vietnamese format - hh:mi:ss dd/mm/yyyy
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.DateTimeTools.ToVietnameseFormatForKendo(System.DateTime)">
+            <summary>
+            Convert given date to Vietnamese format use in Kendo - dd/mm/yyyy hh:mi:ss
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.DateTimeTools.FromVietnameseFormat(System.String)">
+            <summary>
+            Convert input string into DateTime object
+            </summary>
+            <param name="Input"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UsefulTools.ExcelAdapter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UsefulTools.ExcelAdapter.ConvertToHtml(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="Table"></param>
+            <returns></returns>
+        </member>
+        <member name="T:UsefulTools.MonthPicker">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:UsefulTools.MonthPicker.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.MonthYear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.Month">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.Year">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.MinimumYear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.MaximumYear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:UsefulTools.MonthPicker.Font">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:UsefulTools.MonthPicker.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:UsefulTools.MonthPicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:UsefulTools.MonthPicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:UsefulTools.SaltedHash">
+            <summary>
+            Salted hash
+            </summary>
+        </member>
+        <member name="T:UsefulTools.SaltedHash.HashAlgorithms">
+            <summary>
+            Hash algorithm list
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.HashAlgorithms.SHA1">
+            <summary>
+            SHA1
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.HashAlgorithms.SHA256">
+            <summary>
+            SHA256
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.HashAlgorithms.SHA384">
+            <summary>
+            SHA384
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.HashAlgorithms.SHA512">
+            <summary>
+            SHA512
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.HashAlgorithms.MD5">
+            <summary>
+            MD5
+            </summary>
+        </member>
+        <member name="T:UsefulTools.SaltedHash.InputEncoding">
+            <summary>
+            Encoding
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.InputEncoding.Default">
+            <summary>
+            ASCII
+            </summary>
+        </member>
+        <member name="F:UsefulTools.SaltedHash.InputEncoding.UTF8">
+            <summary>
+            UTF-8
+            </summary>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.#ctor(UsefulTools.SaltedHash.HashAlgorithms,System.Int32,UsefulTools.SaltedHash.InputEncoding)">
+            <summary>
+            The constructor takes a HashAlgorithms and salt length as parameters. 
+            </summary>
+            <param name="HashAlgorithm">HashAlgorihms: SHA1, SHA256, SHA384, SHA512 and MD5</param>
+            <param name="theSaltLength">Length of salt data</param>
+            <param name="Encode">Type of input encoding</param>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.#ctor">
+            <summary>
+            Default constructor which initialises the SaltedHash with the SHA256Managed algorithm
+            and a Salt of 4 bytes (or 4 * 8 = 32 bits)
+            </summary>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.ComputeHash(System.Byte[],System.Byte[])">
+            <summary>
+            The actual hash calculation is shared by both GetHashAndSalt and the VerifyHash functions
+            </summary>
+            <param name="Data">A byte array of the Data to Hash</param>
+            <param name="Salt">A byte array of the Salt to add to the Hash</param>
+            <returns>A byte array with the calculated hash</returns>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.GetHashAndSalt(System.Byte[],System.Byte[]@,System.Byte[]@)">
+            <summary>
+            Given a data block this routine returns both a Hash and a Salt
+            </summary>
+            <param name="Data">A <see cref="T:System.Byte"/>byte array containing the data from which to derive the salt</param>
+            <param name="Hash">A <see cref="T:System.Byte"/>byte array which will contain the hash calculated</param>
+            <param name="Salt">A <see cref="T:System.Byte"/>byte array which will contain the salt generated</param>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.GetHashAndSaltString(System.String,System.String@,System.String@)">
+            <summary>
+            The routine provides a wrapper around the GetHashAndSalt function providing conversion
+            from the required byte arrays to strings. Both the Hash and Salt are returned as Base-64 encoded strings.
+            </summary>
+            <param name="Data">A <see cref="T:System.String"/> string containing the data to hash</param>
+            <param name="Hash">A <see cref="T:System.String"/> base64 encoded string containing the generated hash</param>
+            <param name="Salt">A <see cref="T:System.String"/> base64 encoded string containing the generated salt</param>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.VerifyHash(System.Byte[],System.Byte[],System.Byte[])">
+            <summary>
+            This routine verifies whether the data generates the same hash as we had stored previously
+            </summary>
+            <param name="Data">The data to verify </param>
+            <param name="Hash">The hash we had stored previously</param>
+            <param name="Salt">The salt we had stored previously</param>
+            <returns>True on a succesfull match</returns>
+        </member>
+        <member name="M:UsefulTools.SaltedHash.VerifyHashString(System.String,System.String,System.String)">
+            <summary>
+            This routine provides a wrapper around VerifyHash converting the strings containing the
+            data, hash and salt into byte arrays before calling VerifyHash.
+            </summary>
+            <param name="Data">A UTF-8 encoded string containing the data to verify</param>
+            <param name="Hash">A base-64 encoded string containing the previously stored hash</param>
+            <param name="Salt">A base-64 encoded string containing the previously stored salt</param>
+            <returns></returns>
+        </member>
+        <member name="T:UsefulTools.Settings">
+            <summary>
+            Create and manipulating setting file
+            </summary>
+        </member>
+        <member name="M:UsefulTools.Settings.#ctor(System.String)">
+            <summary>
+            Create a new XML settings file
+            </summary>
+            <param name="FileName">File name (with or without extension) include path</param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UsefulTools.Settings.Remove(System.String)">
+            <summary>
+            Remove an exist setting
+            </summary>
+            <param name="SettingName"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UsefulTools.Settings.Get(System.String)">
+            <summary>
+            Get value of one setting
+            </summary>
+            <param name="SettingName"></param>
+            <returns>value of setting name, or null if setting name does not exist</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UsefulTools.Settings.Set(System.String,System.String)">
+            <summary>
+            Set value for one setting
+            </summary>
+            <param name="SettingName"></param>
+            <param name="SettingValue"></param>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:UsefulTools.Settings.Save">
+            <summary>
+            Save all settings
+            <returns>true if save successfully, otherwise false</returns>
+            </summary>
+        </member>
+        <member name="T:UsefulTools.TimeTools">
+            <summary>
+            Time relation tools.
+            </summary>
+        </member>
+        <member name="M:UsefulTools.TimeTools.#ctor">
+            <summary>
+            New time object
+            </summary>
+        </member>
+        <member name="M:UsefulTools.TimeTools.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            New time object
+            </summary>
+            <param name="Hours"></param>
+            <param name="Minutes"></param>
+            <param name="Seconds"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:UsefulTools.TimeTools.#ctor(System.Int32)">
+            <summary>
+            New time object
+            </summary>
+            <param name="Days"></param>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToSeconds">
+            <summary>
+            Time in seconds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToMinutes">
+            <summary>
+            Time in minutes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToHours">
+            <summary>
+            Time in hours
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToDays">
+            <summary>
+            Time in days
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToWeeks">
+            <summary>
+            Time in weeks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToString">
+            <summary>
+            Ngày giờ dưới dạng chuỗi
+            </summary>
+            <returns>chuỗi có dạng: (ngày, giờ:phút:giây)</returns>
+        </member>
+        <member name="M:UsefulTools.TimeTools.ToVietnameseFormat(System.DateTime)">
+            <summary>
+            Convert given time to Vietnamese format - hh:mi:ss
+            </summary>
+            <param name="Input">giờ cần chuyển đổi</param>
+            <returns></returns>
+        </member>
+        <member name="T:MyClasses.InputBox">
+            <summary>
+            Hộp thoại cho phép người sử dụng nhập dữ liệu.
+            </summary>
+        </member>
+        <member name="M:MyClasses.InputBox.Show(System.String,System.String,System.String)">
+            <summary>
+            Hiển thị hộp thoại cho phép người sử dụng nhập dữ liệu.
+            </summary>
+            <param name="caption">Tiêu đề hộp thoại.</param>
+            <param name="prompt">Dòng chữ nhắc nhở người dùng.</param>
+            <param name="defaultValue">Giá trị mặc định.</param>
+            <returns>Trả về chuỗi giá trị người sử dụng nhập vào, trả về null nếu người sử dụng bấm Cancel.</returns>
+        </member>
+    </members>
+</doc>
